@@ -14,7 +14,7 @@ public class ControllerServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         Float x = Float.parseFloat(req.getParameter("X"));
-        Float y = Float.parseFloat(req.getParameter("y"));
+        Float y = Float.parseFloat(req.getParameter("Y"));
         Float r = Float.parseFloat(req.getParameter("R"));
         if (validate(x, y, r))
             req.getServletContext().getRequestDispatcher("/AreaCheckServlet").forward(req, resp);

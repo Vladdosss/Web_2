@@ -20,7 +20,7 @@ public class AreaCheckServlet extends HttpServlet {
         long currentDate = System.nanoTime();
 
         Float x = Float.parseFloat(request.getParameter("X"));
-        Float y = Float.parseFloat(request.getParameter("y"));
+        Float y = Float.parseFloat(request.getParameter("Y"));
         Float r = Float.parseFloat(request.getParameter("R"));
 
         HashMap<String, Object> results = new HashMap();

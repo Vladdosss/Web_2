@@ -59,7 +59,7 @@
 
             <div class="buttons">
                 <div class="button">
-                    <button class="butt" type="submit" name="y">Отправить</button>
+                    <button class="butt submit_button" type="submit" name="Y">Отправить</button>
                 </div>
 
                 <div class="reset">
@@ -112,9 +112,9 @@
 <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
         crossorigin="anonymous"></script>
 <script>
-    $('.button').click(function () {
+    $('label > .button').click(function () {
         y = ($(this).val());
-        $('.butt').val(y);
+        $('.submit_button').val(y);
     });
 </script>
 <script src="./assets/js/validator.js"></script>
